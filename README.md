@@ -77,24 +77,37 @@ SHL-Assessment-Recommendation-System/
 
 ---
 
-## 🚀 How to Run the Project
+## 📦 Installation & Setup
 
-# 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/<your-username>/SHL-Assessment-Recommendation-System.git
 cd SHL-Assessment-Recommendation-System
+```
 
-# 2️⃣ Create and Activate Virtual Environment
+### 2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
+```
 
-# 3️⃣ Install Dependencies
+### 3️⃣ Activate Virtual Environment
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Mac/Linux**
+```bash
+source venv/bin/activate
+```
+
+### 4️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-# 4️⃣ Run the Application
+### 5️⃣ Run the Streamlit App
+```bash
 streamlit run app.py
-
-# 5️⃣ Open in Browser
-# http://localhost:8501
-
-# Example Input (inside the app)
-# Software Developer
+```
