@@ -1,67 +1,92 @@
-# Intelligent (SHL) Assessment Recommendation System
+# 🧠 SHL Assessment Recommendation Engine
 
-This project is an AI-powered recommendation system built to suggest the most relevant SHL assessments based on user queries, job descriptions, or unstructured input data. It combines NLP techniques and Large Language Models (LLMs) to provide accurate, efficient, and context-aware results through an intuitive frontend interface.
+An **AI-powered assessment recommendation system** that intelligently suggests the most relevant **SHL assessments** based on a given job role or skill requirement using **semantic search and NLP embeddings**.
 
-Try it out @ https://shlassessmentrecommendationsystem.streamlit.app [Example Test Cases given below]
+---
 
-## Features
+## 📌 Project Overview
 
-- Recommends SHL assessments based on:
-  - Job descriptions
-  - Unstructured URLs or text input
-  - Custom user queries
-- NLP-based semantic similarity matching using Sentence-BERT
-- Contextual feature extraction and filtering using Gemini 1.5 Pro (LLM)
-- Ranking and scoring using cosine similarity
-- Top recommendations output with relevance filtering
-- Streamlit-based frontend for an interactive user experience
+Recruiters and hiring teams often spend significant time manually browsing large assessment catalogs to find the right tests for a role.  
+This project automates that process by building a **smart recommendation engine** that maps **job requirements** to the most relevant **SHL assessments**.
 
-## Tech Stack
+Instead of relying on keyword matching, the system uses **transformer-based sentence embeddings** to understand semantic meaning.
 
-- **Natural Language Processing**:
-  - Sentence-BERT for creating embeddings of assessments and queries
-  - Cosine similarity for ranking the most relevant assessments
-- **LLM Integration**:
-  - Gemini 1.5 Pro used to extract structured features (job title, skills, duration, etc.) from unstructured input
-  - Post-processing and filtering of recommendations based on constraints like duration and skill match
-- **Frontend**:
-  - Streamlit application for user-friendly interaction and display of results
+---
 
-## How It Works
+## 🎯 Key Features
 
-1. **Data Preparation**:
-   - A mock dataset of 50 SHL-like assessments is used, each containing:
-     - Assessment name, URL, duration, test type, skills, description, remote support, and adaptive/IRT support.
-   - A "combined" column is created by concatenating all columns into a single string for embedding.
+- 🔍 **Semantic Search using AI**
+  - Understands intent behind queries like:
+    - Software Developer
+    - Python skills assessment
+    - Backend engineer
 
-2. **NLP Embedding and Retrieval**:
-   - Sentence-BERT is used to convert both dataset entries and input queries into vector embeddings.
-   - Cosine similarity is calculated to identify the top matching assessments.
+- 📊 **SHL Product Catalogue Integration**
+  - Uses a structured SHL assessment dataset (`SHL_catalog.csv`)
 
-3. **LLM Enhancement (Gemini 1.5 Pro)**:
-   - Accepts job descriptions, URLs, or unstructured queries.
-   - Extracts meaningful structured features like job role, required skills, expected duration, etc.
-   - This information is used to generate more accurate embeddings.
-   - After retrieving top candidates, Gemini re-filters based on constraints and relevance.
+- ⚡ **Fast & Offline Execution**
+  - No external APIs
+  - No paid services
+  - No unstable dependencies
 
-4. **Evaluation**:
-   - Performance is evaluated using metrics such as Recall@5 and MAP@5.
-   - The hybrid (NLP + LLM) approach outperforms the pure NLP baseline in both metrics.
+- 🧠 **Transformer-Based NLP**
+  - Powered by `SentenceTransformer (all-MiniLM-L6-v2)`
 
-5. **Streamlit Interface**:
-   - Users can input queries directly in a web interface.
-   - Receives and displays the top recommended assessments along with their details.
+- 🖥️ **Interactive Web UI**
+  - Simple and clean UI built with **Streamlit**
 
-## Performance
-- NLP Model - Recall@5 = 0.85 and MAP@5 = 0.71
-- NLP + LLM Model - Recall@5 = 1.0 and MAP@5 = 1.0
-  
-## Test Cases 
-- I am hiring for Java developers who can also collaborate effectively with my business teams. Looking
-for an assessment(s) that can be completed in 40 minutes.
-- Looking to hire mid-level professionals who are proficient in Python, SQL and Java Script. Need an
-assessment package that can test all skills with max duration of 60 minutes.
-- I am hiring for an analyst and wants applications to screen using Cognitive and personality tests,
-what options are available within 45 mins.
-- https://www.linkedin.com/jobs/view/research-engineer-ai-at-shl-4194768899/?originalSubdomain=in
-- Want to assess communication and teamwork skills in under 30 minutes.
+---
+
+## 🏗️ System Architecture
+
+User Query (Job Role / Skills)  
+↓  
+Sentence Embedding (Transformer Model)  
+↓  
+Cosine Similarity Matching  
+↓  
+Ranked SHL Assessments  
+↓  
+Results Displayed in UI  
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|--------|-----------|
+| Language | Python |
+| NLP / AI | SentenceTransformers |
+| Similarity | Cosine Similarity |
+| ML Backend | PyTorch |
+| UI | Streamlit |
+| Data Source | SHL Assessment Catalogue (CSV) |
+
+---
+
+## 📂 Project Structure
+
+SHL-Assessment-Recommendation-System/  
+│  
+├── app.py                     # Streamlit UI  
+├── query_functions.py          # Core recommendation logic  
+├── SHL_catalog.csv             # SHL assessment dataset  
+├── requirements.txt            # Python dependencies  
+├── README.md                   # Project documentation  
+└── venv/                       # Virtual environment (ignored)  
+
+---
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/SHL-Assessment-Recommendation-System.git
+cd SHL-Assessment-Recommendation-System
+
+### 2️⃣ Create and Activate Virtual Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate   # Windows
