@@ -79,14 +79,22 @@ SHL-Assessment-Recommendation-System/
 
 ## 🚀 How to Run the Project
 
-### 1️⃣ Clone the Repository
-
-```bash
+# 1️⃣ Clone the Repository
 git clone https://github.com/<your-username>/SHL-Assessment-Recommendation-System.git
 cd SHL-Assessment-Recommendation-System
 
-### 2️⃣ Create and Activate Virtual Environment
-
-```bash
+# 2️⃣ Create and Activate Virtual Environment
 python -m venv venv
 venv\Scripts\activate   # Windows
+
+# 3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+# 4️⃣ Run the Application
+streamlit run app.py
+
+# 5️⃣ Open in Browser
+# http://localhost:8501
+
+# Example Input (inside the app)
+# Software Developer
