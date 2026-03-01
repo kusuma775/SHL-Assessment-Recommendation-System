@@ -117,40 +117,43 @@ streamlit run app.py
 http://localhost:8501
 ```
 
-🧪 Example Usage
-Input
+## 🧪 Example Usage
+
+### Input
+```text
 Software Developer
-Output (Sample)
-Assessment Name	Skills	Test Type	Duration	Relevance Score
-Software Development Aptitude	Programming, Logic	Cognitive	40 mins	0.83
-Coding Skills Assessment	Python, Java	Technical	60 mins	0.79
-Logical Reasoning Test	Problem Solving	Cognitive	30 mins	0.74
-🧠 Why This Project Is Strong
+## Output (Sample)
 
-Solves a real-world hiring problem
+| Assessment Name                | Skills             | Test Type | Duration | Relevance Score |
+|--------------------------------|--------------------|-----------|----------|-----------------|
+| Software Development Aptitude  | Programming, Logic | Cognitive | 40 mins  | 0.83            |
+| Coding Skills Assessment       | Python, Java       | Technical | 60 mins  | 0.79            |
+| Logical Reasoning Test         | Problem Solving    | Cognitive | 30 mins  | 0.74            |
 
-Uses AI/NLP instead of rule-based logic
+---
 
-Clean, modular, production-ready code
+## 🧠 Why This Project Is Strong
 
-Fast, deterministic, and reliable
+- Solves a real-world hiring problem
+- Uses AI/NLP instead of rule-based logic
+- Clean, modular, production-ready code
+- Fast, deterministic, and reliable
+- Easily extensible for enterprise use
 
-Easily extensible for enterprise use
+---
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
-Role-based weighting (Developer vs Sales roles)
+- Role-based weighting (Developer vs Sales roles)
+- Assessment duration and test-type filters
+- Resume-to-assessment mapping
+- Database integration (PostgreSQL / MongoDB)
+- Recruiter analytics dashboard
 
-Assessment duration and test-type filters
+---
 
-Resume-to-assessment mapping
+## 👤 Author
 
-Database integration (PostgreSQL / MongoDB)
-
-Recruiter analytics dashboard
-
-👤 Author
-
-Kurumu Kusuma
-B.Tech (ECE) | Python & AI Developer
+Kurumu Kusuma  
+B.Tech (ECE) | Python & AI Developer  
 Interested in AI-driven systems, hiring technology, and scalable applications
