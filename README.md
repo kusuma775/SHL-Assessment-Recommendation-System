@@ -111,3 +111,46 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+### 6️⃣ Open in Browser
+```bash
+http://localhost:8501
+```
+
+🧪 Example Usage
+Input
+Software Developer
+Output (Sample)
+Assessment Name	Skills	Test Type	Duration	Relevance Score
+Software Development Aptitude	Programming, Logic	Cognitive	40 mins	0.83
+Coding Skills Assessment	Python, Java	Technical	60 mins	0.79
+Logical Reasoning Test	Problem Solving	Cognitive	30 mins	0.74
+🧠 Why This Project Is Strong
+
+Solves a real-world hiring problem
+
+Uses AI/NLP instead of rule-based logic
+
+Clean, modular, production-ready code
+
+Fast, deterministic, and reliable
+
+Easily extensible for enterprise use
+
+🔮 Future Enhancements
+
+Role-based weighting (Developer vs Sales roles)
+
+Assessment duration and test-type filters
+
+Resume-to-assessment mapping
+
+Database integration (PostgreSQL / MongoDB)
+
+Recruiter analytics dashboard
+
+👤 Author
+
+Kurumu Kusuma
+B.Tech (ECE) | Python & AI Developer
+Interested in AI-driven systems, hiring technology, and scalable applications
