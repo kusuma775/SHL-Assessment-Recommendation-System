@@ -1,9 +1,24 @@
-# Ignore Python cache files
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python cache
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
 
-# Ignore environment files
-.env
+# Jupyter
+.ipynb_checkpoints/
 
-# Ignore macOS system files
+# OS files
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
